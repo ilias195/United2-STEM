@@ -8,6 +8,8 @@ public class MovingPlatform : MonoBehaviour
 
     private int i;
     private Rigidbody2D rb;
+    private int currentIndex = 0; //nummer van het punt waar we nu naartoe bewegen
+
 
     private void Awake()
     {
@@ -21,31 +23,25 @@ public class MovingPlatform : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Vector2.Distance(rb.position, points[i].position) < 0.01f)
-        {
-            i++;
-            if (i == points.Length)
-                i = 0;
-        }
+        if (points == null || points.Length < 2) return;
 
-        rb.MovePosition(
-            Vector2.MoveTowards(rb.position, points[i].position, speed * Time.fixedDeltaTime)
+        Transform target = points[currentIndex];
+
+        transform.position = Vector2.MoveTowards(
+            transform.position,
+            target.position,
+            speed * Time.fixedDeltaTime
         );
-    }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        if (Vector2.Distance(transform.position, target.position) < 0.05f)
         {
-            StartCoroutine(SetParentNextFrame(collision.transform));
+            currentIndex++;
+            if (currentIndex >= points.Length) // ga terug naar punt 0
+                currentIndex = 0;
         }
     }
 
-    private IEnumerator SetParentNextFrame(Transform player)
-    {
-        yield return null; // wacht 1 frame
-        player.SetParent(transform);
-    }
+   
 
 
 }
