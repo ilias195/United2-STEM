@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour
@@ -6,36 +7,45 @@ public class MovingPlatform : MonoBehaviour
     [SerializeField] private Transform[] points;
 
     private int i;
+    private Rigidbody2D rb;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     private void Start()
     {
-        transform.position = points[0].position;
+        rb.position = points[0].position;
     }
-    private void Update()
+
+    private void FixedUpdate()
     {
-        if (Vector2.Distance(transform.position, points[i].position) < 0.01f)
+        if (Vector2.Distance(rb.position, points[i].position) < 0.01f)
         {
             i++;
-            if(i == points.Length)
-            {
-                i= 0;
-            }
+            if (i == points.Length)
+                i = 0;
         }
-        transform.position = Vector2.MoveTowards(transform.position, points[i].position, speed * Time.deltaTime);
+
+        rb.MovePosition(
+            Vector2.MoveTowards(rb.position, points[i].position, speed * Time.fixedDeltaTime)
+        );
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            collision.transform.SetParent(transform);
+            StartCoroutine(SetParentNextFrame(collision.transform));
         }
     }
-    private void OnCollisionExit(Collision collision)
+
+    private IEnumerator SetParentNextFrame(Transform player)
     {
-        if (collision.gameObject.tag == "Player")
-        {
-            collision.transform.SetParent(null);
-        }
+        yield return null; // wacht 1 frame
+        player.SetParent(transform);
     }
+
+
 }

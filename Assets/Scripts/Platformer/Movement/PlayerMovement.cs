@@ -2,20 +2,22 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public int coins;
     [SerializeField] private float moveSpeed = 5f;
 
     private Rigidbody2D rb;
 
-    public float MoveInput { get; private set; }//andere script mogen deze waarde lezen maar, alleen dit script mag het aanpassen
+    public float MoveInput { get; private set; }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate; // extra smooth
     }
 
     private void Update()
     {
-        MoveInput = Input.GetAxis("Horizontal");
+        MoveInput = Input.GetAxisRaw("Horizontal");
     }
 
     private void FixedUpdate()

@@ -8,10 +8,14 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float groundRadius = 0.2f;
     [SerializeField] private LayerMask groundLayer;
 
+   
+
     private Rigidbody2D rb;
     private bool isGrounded;
     private int extraJumps;
 
+
+    [SerializeField] private AudioClip jumpClip;
     public bool IsGrounded => isGrounded;
 
     private void Awake()
@@ -22,22 +26,41 @@ public class PlayerJump : MonoBehaviour
     private void Start()
     {
         extraJumps = extraJumpValue;
+        
     }
 
     private void Update()
     {
         if (isGrounded)
+        {
             extraJumps = extraJumpValue;
+        }
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isGrounded || extraJumps > 0)
             {
+              
+                if (AudioManager.audioCurrent != null && jumpClip != null)
+                {
+                    AudioManager.audioCurrent.PlaySound(jumpClip);
+                }
+                else
+                {
+                    Debug.LogWarning("Jump sound niet afgespeeld (AudioManager of clip is null)");
+                }
+
+              
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                if (!isGrounded) extraJumps--;
+
+                if (!isGrounded)
+                {
+                    extraJumps--;
+                }
             }
         }
     }
+
 
     private void FixedUpdate()
     {
@@ -47,4 +70,6 @@ public class PlayerJump : MonoBehaviour
             groundLayer
         );
     }
+
+   
 }

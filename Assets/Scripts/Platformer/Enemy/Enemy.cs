@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     private int i;
     private SpriteRenderer spriteRenderer;
 
+    [SerializeField] private AudioClip hitClip;
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -50,6 +51,11 @@ public class Enemy : MonoBehaviour
         if (playerHealth != null)
         {
             playerHealth.TakeDamage(damage);
+
+            if (AudioManager.audioCurrent != null && hitClip != null)
+            {
+                AudioManager.audioCurrent.PlaySound(hitClip);
+            }
         }
     }
 

@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: 48b499dd6b301fc4391c0d7139be961e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -650616998993176321
+    second: ButtonsMainMenu&Resume_0
+  - first:
+      213: -6766184171396843588
+    second: ButtonsMainMenu&Resume_1
+  - first:
+      213: -7083527926163803150
+    second: ButtonsMainMenu&Resume_2
+  - first:
+      213: 7943332557501068734
+    second: ButtonsMainMenu&Resume_3
+  - first:
+      213: -8774020729064893362
+    second: ButtonsMainMenu&Resume_4
+  - first:
+      213: -2961091147095235230
+    second: ButtonsMainMenu&Resume_5
+  - first:
+      213: -3199411424443528575
+    second: ButtonsMainMenu&Resume_6
+  - first:
+      213: 8421845112126005528
+    second: ButtonsMainMenu&Resume_7
+  - first:
+      213: -6229846301331373359
+    second: ButtonsMainMenu&Resume_8
+  - first:
+      213: -8444467065863231924
+    second: ButtonsMainMenu&Resume_9
+  - first:
+      213: -1408111389332048527
+    second: ButtonsMainMenu&Resume_10
+  - first:
+      213: 6162547434808642932
+    second: ButtonsMainMenu&Resume_11
+  - first:
+      213: 7818350864575655776
+    second: ButtonsMainMenu&Resume_12
+  - first:
+      213: 2962969219163439344
+    second: ButtonsMainMenu&Resume_13
+  - first:
+      213: -8420554582266863879
+    second: ButtonsMainMenu&Resume_14
+  - first:
+      213: 5374150979545015373
+    second: ButtonsMainMenu&Resume_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ButtonsMainMenu&Resume_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 1536
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff85e2a594b88f6f0800000000000000
+      internalID: -650616998993176321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ButtonsMainMenu&Resume_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7350b485fa912a0800000000000000
+      internalID: -6766184171396843588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 16f02bc3403ea084e81bea9ed9998eef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ButtonsMainMenu&Resume_0: -650616998993176321
+      ButtonsMainMenu&Resume_1: -6766184171396843588
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
