@@ -1178,7 +1178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallY: -20
-  fallCip: {fileID: 8300000, guid: 5a42d4d92f2984571a78eac3e662b084, type: 3}
+  fallCip: {fileID: 8300000, guid: 804eab2af00a8441d867f02b468be3cc, type: 3}
 --- !u!1001 &532553720
 PrefabInstance:
   m_ObjectHideFlags: 0
