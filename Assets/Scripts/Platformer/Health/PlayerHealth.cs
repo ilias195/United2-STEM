@@ -10,9 +10,13 @@ public class PlayerHealth : MonoBehaviour
     public int MaxHealth => maxHealth;
     public int CurrentHealth => currentHealth;
     private bool isDead = false;
+
+    [SerializeField] private Healthbar healthbar;
     private void Start()
     {
         currentHealth = maxHealth;
+
+        healthbar.SetMaxHealth(maxHealth);
     }
 
     public void TakeDamage(int amount)
@@ -21,6 +25,8 @@ public class PlayerHealth : MonoBehaviour
 
         currentHealth -= amount;
         Debug.Log("Player HP: " + currentHealth);
+
+        healthbar.SetHealth(currentHealth);
 
         if (currentHealth <= 0)
         {
