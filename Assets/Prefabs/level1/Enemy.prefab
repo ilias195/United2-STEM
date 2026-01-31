@@ -71,7 +71,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3988893003155278174}
-  - component: {fileID: 3374349337141803043}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -97,22 +96,6 @@ Transform:
   - {fileID: 4535118433203497178}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3374349337141803043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8078634959987434115}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7775112c970da204d896718617f15f9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  points: []
-  damage: 25
-  hitClip: {fileID: 8300000, guid: 3dc7d265f9c42437492a59228fc7b6d7, type: 3}
 --- !u!1 &8936442347446465934
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,7 +109,9 @@ GameObject:
   - component: {fileID: 1795979426741304971}
   - component: {fileID: 2177651999015059437}
   - component: {fileID: 7631558680248115967}
-  - component: {fileID: 4632352915257060061}
+  - component: {fileID: 3099692056186514857}
+  - component: {fileID: 6561909777247412782}
+  - component: {fileID: 1120255969522280804}
   m_Layer: 0
   m_Name: ActualEnemy
   m_TagString: Damage
@@ -299,7 +284,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4632352915257060061
+--- !u!114 &3099692056186514857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936442347446465934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 967dd4fc63bf1054cb36a8db95586d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
+--- !u!114 &6561909777247412782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -312,8 +310,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
-  points:
-  - {fileID: 4532347035224098334}
-  - {fileID: 4535118433203497178}
+  points: []
   damage: 25
+  hitClip: {fileID: 0}
+--- !u!114 &1120255969522280804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8936442347446465934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fedb502fc157e414a8e7788d86377b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   hitClip: {fileID: 0}
