@@ -7,31 +7,37 @@ public class EnemyWalkAnimation :MonoBehaviour
     private Animator animator;
     private EnemyWalk enemy;
 
-    private float lastAttackTime;
-    [SerializeField] private float attackCooldown = 1f;
+    private float attackTimer;
+    public float attackCooldown = 1f;
 
-    private void Awake()
+    void Awake()
     {
         animator = GetComponent<Animator>();
         enemy = GetComponent<EnemyWalk>();
     }
 
-    private void Update()
+    void Update()
     {
         if (enemy == null) return;
 
+        // Chase animatie
         animator.SetBool("IsChasing", enemy.isChasing);
 
-        if (enemy.isAttacking && Time.time >= lastAttackTime + attackCooldown)
-        {
-            lastAttackTime = Time.time;
-            animator.SetTrigger("Attack");
-        }
+        // Attack animatie
         if (enemy.isAttacking)
         {
-            Debug.Log("ATTACK SHOULD TRIGGER");
-        }
+            attackTimer += Time.deltaTime;
 
+            if (attackTimer >= attackCooldown)
+            {
+                animator.SetTrigger("Attack");
+                attackTimer = 0f;
+            }
+        }
+        else
+        {
+            attackTimer = attackCooldown; // meteen klaar voor volgende attack
+        }
     }
 }
 

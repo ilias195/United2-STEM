@@ -3,7 +3,7 @@ using UnityEngine;
 public class EnemyWalk : EnemyBase1
 {
 
-   [Header("Waypoints")]
+    [Header("Waypoints")]
     public Transform[] waypoints;
 
     [Header("Ranges")]
@@ -17,30 +17,29 @@ public class EnemyWalk : EnemyBase1
     [HideInInspector] public bool isChasing;
     [HideInInspector] public bool isAttacking;
 
-    private int index = 0;
+    private int currentIndex = 0;
     private int direction = 1;
 
     protected override void EnemyBehaviour()
     {
         float distance = Vector2.Distance(transform.position, player.position);
 
+        // reset states
+        isChasing = false;
+        isAttacking = false;
+
         if (distance <= attackRange)
         {
-            isAttacking = true;
             isChasing = true;
-            return;
+            isAttacking = true;
         }
-
-        if (distance <= chaseRange)
+        else if (distance <= chaseRange)
         {
             isChasing = true;
-            isAttacking = false;
             Chase();
         }
         else
         {
-            isChasing = false;
-            isAttacking = false;
             Patrol();
         }
     }
@@ -49,7 +48,7 @@ public class EnemyWalk : EnemyBase1
     {
         if (waypoints.Length < 2) return;
 
-        Transform target = waypoints[index];
+        Transform target = waypoints[currentIndex];
 
         transform.position = Vector2.MoveTowards(
             transform.position,
@@ -59,10 +58,12 @@ public class EnemyWalk : EnemyBase1
 
         if (Vector2.Distance(transform.position, target.position) < 0.05f)
         {
-            if (index == waypoints.Length - 1) direction = -1;
-            if (index == 0) direction = 1;
+            if (currentIndex == waypoints.Length - 1)
+                direction = -1;
+            else if (currentIndex == 0)
+                direction = 1;
 
-            index += direction;
+            currentIndex += direction;
         }
     }
 
