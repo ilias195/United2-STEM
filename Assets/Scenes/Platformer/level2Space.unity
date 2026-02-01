@@ -1664,6 +1664,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parrallaxEffectMultiplier: {x: 0.6, y: 0.3}
+  infiniteHorizontal: 0
+  infiniteVertical: 0
 --- !u!1 &730389179
 GameObject:
   m_ObjectHideFlags: 0
@@ -14327,6 +14329,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parrallaxEffectMultiplier: {x: 0.4, y: 0.2}
+  infiniteHorizontal: 0
+  infiniteVertical: 0
 --- !u!4 &1479365801
 Transform:
   m_ObjectHideFlags: 0
@@ -15398,6 +15402,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1099529587689123786, guid: 5f15a8e3b815f3740a85baf857c01358, type: 3}
+      propertyPath: attackCooldown
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 1946780962134151295, guid: 5f15a8e3b815f3740a85baf857c01358, type: 3}
       propertyPath: m_Name
       value: Enemy
