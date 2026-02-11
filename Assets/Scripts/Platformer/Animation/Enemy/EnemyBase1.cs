@@ -34,8 +34,7 @@ public abstract class EnemyBase1 : MonoBehaviour
 
         isDead = true;
 
-        // optioneel: death animatie
-        // animator.SetTrigger("Die");
+        
 
         Destroy(gameObject, 0.1f);
     }
