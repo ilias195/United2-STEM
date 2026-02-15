@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,6 +7,7 @@ public class Healthbar : MonoBehaviour
 
     [Header("UI")]
     public Image fillImage;
+    public TextMeshProUGUI healthText;  
 
     [Header("Color")]
     public Gradient gradient;
@@ -17,6 +19,8 @@ public class Healthbar : MonoBehaviour
         maxHealth = health;
         fillImage.fillAmount = 1f;
         fillImage.color = gradient.Evaluate(1f);
+
+        healthText.text = health + " / " + health;
     }
 
     public void SetHealth(float health)
@@ -24,5 +28,7 @@ public class Healthbar : MonoBehaviour
         float normalized = health / maxHealth;
         fillImage.fillAmount = normalized;
         fillImage.color = gradient.Evaluate(normalized);
+
+        healthText.text = health + " / " + maxHealth;
     }
 }
