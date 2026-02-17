@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 101332a63828e7347ba354d7d0ce7c60
+guid: 1546ca44a4378cc4a954ce05fc80f9d2
 DefaultImporter:
   externalObjects: {}
   userData: 
@@ -7,8 +7,8 @@ DefaultImporter:
   assetBundleVariant: 
 AssetOrigin:
   serializedVersion: 1
-  productId: 158680
-  packageName: FREE Parallax Forest Background HQ
+  productId: 226622
+  packageName: Pixel Skies DEMO Background pack
   packageVersion: 1.0
-  assetPath: Assets/FREE Parallax Forest Background HQ/Scenes/Demoscene.unity
-  uploadId: 537281
+  assetPath: Assets/Dark-Forest-background/Scenes/demoscene.unity
+  uploadId: 517367
