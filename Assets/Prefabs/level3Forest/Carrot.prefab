@@ -170,4 +170,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd545650eabc4d4c9c7198266b05f03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinClip: {fileID: 0}
+  coinClip: {fileID: 8300000, guid: d19ed3bf9a3775747b2d81f2d4dee1fc, type: 3}
