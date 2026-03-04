@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -272,6 +276,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3204,6 +3212,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _healAmount: 25
+  _healSound: {fileID: 0}
+  _volume: 1
 --- !u!212 &991959651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3393,6 +3403,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3454,6 +3468,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14863,6 +14881,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16308,6 +16330,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16369,6 +16395,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16430,6 +16460,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16531,6 +16565,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16597,6 +16635,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16794,6 +16836,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16843,6 +16889,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 445226352}
     m_Modifications:
+    - target: {fileID: 2643984348888590115, guid: ba3b45032ae861949b879bcc900c6292, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8873b6448e7094ea9861c4adb3446863, type: 3}
     - target: {fileID: 5195933954072228126, guid: ba3b45032ae861949b879bcc900c6292, type: 3}
       propertyPath: m_Name
       value: CoinCounter
@@ -17215,6 +17265,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8623454851899793593, guid: d9a9dae95b99de346a7a7274afe1894b, type: 3}
+      propertyPath: coinClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a544a907f0e75b4a9fc1169ce414358, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
