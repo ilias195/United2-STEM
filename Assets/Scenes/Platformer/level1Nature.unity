@@ -335,9 +335,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1300618348}
-        m_TargetAssemblyTypeName: NextLevel, Assembly-CSharp
-        m_MethodName: Nextlevel
+      - m_Target: {fileID: 532473859}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: LoadNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1129,7 +1129,7 @@ Transform:
   m_GameObject: {fileID: 273890596}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -254.4, y: -318.37, z: -10}
+  m_LocalPosition: {x: -97.4, y: -317.87, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1751,6 +1751,50 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fallY: -20
   fallCip: {fileID: 8300000, guid: 804eab2af00a8441d867f02b468be3cc, type: 3}
+--- !u!1 &532473858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 532473860}
+  - component: {fileID: 532473859}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &532473859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532473858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6c6a6c3fab90640a9e3a3e6404331c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &532473860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532473858}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 129.00182, y: -3.9297593, z: -0.05566184}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &534418055 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8464386822585557545, guid: ee3a19ab27212fc46b59c052b8689770, type: 3}
@@ -3184,6 +3228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCoin: {fileID: 408983308}
   coinText: {fileID: 2118188627}
+  labelName: coins
 --- !u!4 &1069091566
 Transform:
   m_ObjectHideFlags: 0
@@ -3328,7 +3373,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 5.3346043, y: 1.35}
+  m_Size: {x: 100, y: 1.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3361,9 +3406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ee541880e60594bbd826d7afd89f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parrallaxEffectMultiplier: {x: -0.2, y: 0}
-  infiniteHorizontal: 1
-  infiniteVertical: 1
+  parrallaxEffectMultiplier: {x: 0.2, y: 0}
+  infiniteHorizontal: 0
+  infiniteVertical: 0
 --- !u!1 &1199642552
 GameObject:
   m_ObjectHideFlags: 0
@@ -3708,7 +3753,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 5.334604, y: 1.35}
+  m_Size: {x: 100, y: 1.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -3741,9 +3786,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7ee541880e60594bbd826d7afd89f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parrallaxEffectMultiplier: {x: -0.4, y: 0}
-  infiniteHorizontal: 1
-  infiniteVertical: 1
+  parrallaxEffectMultiplier: {x: 0.4, y: 0}
+  infiniteHorizontal: 0
+  infiniteVertical: 0
 --- !u!1 &1276182012
 GameObject:
   m_ObjectHideFlags: 0
@@ -10936,7 +10981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1919056856
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12258,3 +12303,4 @@ SceneRoots:
   - {fileID: 5212534117153699793}
   - {fileID: 1196282156}
   - {fileID: 1253244244}
+  - {fileID: 532473860}

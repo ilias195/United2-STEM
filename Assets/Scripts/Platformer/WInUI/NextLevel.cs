@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
+    [SerializeField] SceneManager sceneManager;
     public void Nextlevel()
     {
         Debug.Log("NextLevel Button CLICKED");
