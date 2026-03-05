@@ -14,6 +14,9 @@ public class PlayerJump : MonoBehaviour
     private bool isGrounded;
     private int extraJumps;
 
+    [Header("Input Settings")]
+    [SerializeField] private KeyCode keyboardJumpKey = KeyCode.Space;
+    [SerializeField] private KeyCode arcadeJumpKey = KeyCode.JoystickButton0;
 
     [SerializeField] private AudioClip jumpClip;
     public bool IsGrounded => isGrounded;
@@ -36,7 +39,7 @@ public class PlayerJump : MonoBehaviour
             extraJumps = extraJumpValue;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(keyboardJumpKey) || Input.GetKeyDown(arcadeJumpKey))
         {
             if (isGrounded || extraJumps > 0)
             {

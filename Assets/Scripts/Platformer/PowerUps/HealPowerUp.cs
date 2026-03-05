@@ -7,9 +7,9 @@ public class HealPowerUp : MonoBehaviour
     [SerializeField] private AudioClip _healSound;   
     [SerializeField] private float _volume = 1f;     
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        PlayerHealth player = other.GetComponent<PlayerHealth>();
+        PlayerHealth player = collision.GetComponent<PlayerHealth>();
 
 
         if (player != null)
@@ -19,8 +19,9 @@ public class HealPowerUp : MonoBehaviour
 
             //  speel geluid af op positie van object
             AudioSource.PlayClipAtPoint(_healSound, transform.position, _volume);
+            Destroy(gameObject);
 
-            Destroy(other.gameObject);
         }
+       
     }
 }
