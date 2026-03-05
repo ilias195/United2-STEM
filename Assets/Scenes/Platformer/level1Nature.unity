@@ -1129,7 +1129,7 @@ Transform:
   m_GameObject: {fileID: 273890596}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -86.00001, y: -238.66998, z: -10}
+  m_LocalPosition: {x: -959.4, y: -541.37, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1682,6 +1682,8 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  keyboardJumpKey: 32
+  arcadeJumpKey: 330
   jumpClip: {fileID: 8300000, guid: 3907b9a66967648e0bd353f41fa2b1e5, type: 3}
 --- !u!114 &408983305
 MonoBehaviour:
@@ -1723,6 +1725,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 0
   moveSpeed: 6
+  moveLeftKey: 97
+  moveRightKey: 100
+  arcadeLeftKey: 276
+  arcadeRightKey: 275
 --- !u!114 &408983309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2429,7 +2435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829852977365144718, guid: c16232871544c6c4e9192266be5dd541, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -633
+      value: -795
       objectReference: {fileID: 0}
     - target: {fileID: 1829852977365144718, guid: c16232871544c6c4e9192266be5dd541, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -11753,7 +11759,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8777524505495291426, guid: ba3b45032ae861949b879bcc900c6292, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -699.00037
+      value: -841
       objectReference: {fileID: 0}
     - target: {fileID: 8777524505495291426, guid: ba3b45032ae861949b879bcc900c6292, type: 3}
       propertyPath: m_AnchoredPosition.y
